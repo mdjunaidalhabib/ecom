@@ -1,0 +1,24 @@
+{
+  "name": "Glorixbd",
+  "short_name": "Glorixbd",
+  "description": "Glorixbd is a trusted online shopping platform in Bangladesh with fast delivery and quality products.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "id": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#f472b6",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

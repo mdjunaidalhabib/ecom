@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="page">
+      <!-- HEADER -->
+      <div class="header">
+        <div class="order-info">
+          <div><strong>Order ID:</strong> {{orderId}}</div>
+          <div><strong>Date:</strong> {{date}} ; {{time}}</div>
+          <div><strong>Payment:</strong> {{payment}}</div>
+        </div>
+
+        <!-- 🔥 BILLING CARD -->
+        <div class="billing-card">
+          <div class="billing-title">Billing Details</div>
+
+          <div class="row-bill">
+            <span class="label">Name</span>
+            <span class="value">{{name}}</span>
+          </div>
+
+          <div class="row-bill">
+            <span class="label">Phone</span>
+            <span class="value">{{phone}}</span>
+          </div>
+
+          <div class="row-bill">
+            <span class="label">Address</span>
+            <span class="value">{{address}}</span>
+          </div>
+
+          <div class="row-bill">
+            <span class="label">Note</span>
+            <span class="value">{{note}}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🔥 ITEMS TABLE -->
+      <div class="items">
+        <div class="table-header">
+          <span>Item</span>
+          <span>Price</span>
+          <span>Qty</span>
+          <span>Total</span>
+        </div>
+
+        {{items}}
+      </div>
+
+      <!-- SUMMARY -->
+      <div class="summary">
+        <div class="summary-row">
+          <span class="label">Subtotal</span><span>{{subtotal}} tk</span>
+        </div>
+        <div class="summary-row">
+          <span class="label">Delivery</span><span>{{delivery}} tk</span>
+        </div>
+        <div class="summary-row">
+          <span class="label">Discount</span><span>{{discount}} tk</span>
+        </div>
+      </div>
+
+      <div class="total">Total: {{total}} tk</div>
+    </div>
+  </body>
+</html>
